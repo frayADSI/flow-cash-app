@@ -23,7 +23,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Flujo_de_caja" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="viewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Flujo_de_caja" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,30 +34,28 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuario" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGe-bz-gCi">
-                                <rect key="frame" x="153" y="130" width="69" height="23.5"/>
-                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gYg-Sx-ggC">
-                                <rect key="frame" x="25" y="186.5" width="325" height="34"/>
+                                <rect key="frame" x="25" y="187" width="325" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9m-kp-Zz3">
-                                <rect key="frame" x="30" y="246.5" width="315" height="24"/>
+                                <rect key="frame" x="30" y="247" width="315" height="24"/>
                                 <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TST-mH-aO2">
-                                <rect key="frame" x="25" y="303.5" width="325" height="34"/>
+                                <rect key="frame" x="25" y="304" width="325" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8Z-ox-EIJ">
-                                <rect key="frame" x="125" y="437.5" width="125" height="30"/>
+                                <rect key="frame" x="125" y="438" width="125" height="30"/>
                                 <color key="backgroundColor" name="Color"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="125" id="HXE-dh-7cM"/>
@@ -68,6 +66,12 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Usuario" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGe-bz-gCi">
+                                <rect key="frame" x="142" y="129" width="90" height="24"/>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="background"/>
@@ -91,27 +95,32 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GDc-Yt-mLv"/>
+                    <connections>
+                        <outlet property="loginButton" destination="d8Z-ox-EIJ" id="w63-Cl-20q"/>
+                        <outlet property="passwordTextField" destination="TST-mH-aO2" id="3Av-99-VuM"/>
+                        <outlet property="userTextField" destination="gYg-Sx-ggC" id="0It-ux-4KK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="947.82608695652186" y="93.75"/>
+            <point key="canvasLocation" x="946.39999999999998" y="93.103448275862078"/>
         </scene>
-        <!--View Controller-->
+        <!--Menu View Controller-->
         <scene sceneID="XxA-GP-N2W">
             <objects>
-                <viewController id="BcE-Ry-pUu" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuViewController" id="BcE-Ry-pUu" customClass="MenuViewController" customModule="Flujo_de_caja" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bsM-i6-pTE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menú" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfo-VU-a4n">
-                                <rect key="frame" x="149.5" y="55" width="76" height="36"/>
+                                <rect key="frame" x="149.5" y="55" width="76" height="35"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="df0-dR-grh">
-                                <rect key="frame" x="107.5" y="129" width="160" height="130"/>
+                                <rect key="frame" x="107.5" y="128" width="160" height="130"/>
                                 <color key="backgroundColor" name="Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="KWY-lD-lGM"/>
@@ -123,7 +132,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMq-Ba-p4b">
-                                <rect key="frame" x="107.5" y="304" width="157" height="130"/>
+                                <rect key="frame" x="107.5" y="303" width="157" height="130"/>
                                 <color key="backgroundColor" name="Color"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="20"/>
                                 <state key="normal" title="Saldo">
@@ -131,7 +140,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIu-S0-AiQ">
-                                <rect key="frame" x="102.5" y="481" width="170" height="50"/>
+                                <rect key="frame" x="102.5" y="480" width="170" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="b22-Gl-Som"/>
@@ -159,22 +168,27 @@
                             <constraint firstItem="EMq-Ba-p4b" firstAttribute="width" secondItem="df0-dR-grh" secondAttribute="width" multiplier="0.98125" id="yNj-cs-fTw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="balanceButton" destination="EMq-Ba-p4b" id="qdy-uU-XKG"/>
+                        <outlet property="logoutButton" destination="GIu-S0-AiQ" id="Jcy-He-FHY"/>
+                        <outlet property="transactionsButton" destination="df0-dR-grh" id="0ov-X3-5Pj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HI9-IQ-JLv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1751.2" y="93.103448275862078"/>
         </scene>
-        <!--View Controller-->
+        <!--Transactions List View Controller-->
         <scene sceneID="tgY-9S-uju">
             <objects>
-                <viewController id="Ffs-wi-C2H" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TransactionsListViewController" id="Ffs-wi-C2H" customClass="TransactionsListViewController" customModule="Flujo_de_caja" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5QX-br-aqC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ERK-fJ-jmI">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ERK-fJ-jmI">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="a0T-b1-GpD"/>
@@ -186,15 +200,18 @@
                             <constraint firstItem="a0T-b1-GpD" firstAttribute="trailing" secondItem="ERK-fJ-jmI" secondAttribute="trailing" id="vJC-Dq-Wyc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="ERK-fJ-jmI" id="4l3-TR-pSd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rUd-nM-ttn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2604" y="93"/>
         </scene>
-        <!--View Controller-->
+        <!--Transaction Detail View Controller-->
         <scene sceneID="Mmg-GG-ht2">
             <objects>
-                <viewController id="25I-WZ-WkX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TransactionDetailViewController" id="25I-WZ-WkX" customClass="TransactionDetailViewController" customModule="Flujo_de_caja" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yln-sU-LHY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -203,31 +220,31 @@
                                 <rect key="frame" x="30" y="50" width="315" height="617"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="id:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phg-CT-7er">
-                                        <rect key="frame" x="27" y="34" width="21" height="24"/>
+                                        <rect key="frame" x="27" y="34" width="22" height="24"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEt-oR-h6k">
-                                        <rect key="frame" x="87" y="91" width="12" height="18"/>
+                                        <rect key="frame" x="87" y="91" width="13" height="18"/>
                                         <fontDescription key="fontDescription" name="Roboto-Italic" family="Roboto" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fecha:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCX-3D-EfY">
-                                        <rect key="frame" x="213" y="34" width="55" height="24"/>
+                                        <rect key="frame" x="212" y="34" width="55" height="24"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdG-OC-nU2">
-                                        <rect key="frame" x="283" y="37" width="12" height="18"/>
+                                        <rect key="frame" x="282" y="37" width="13" height="18"/>
                                         <fontDescription key="fontDescription" name="Roboto-Italic" family="Roboto" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g08-nH-LIf">
-                                        <rect key="frame" x="63" y="37" width="12" height="18"/>
+                                        <rect key="frame" x="64" y="37" width="13" height="18"/>
                                         <fontDescription key="fontDescription" name="Roboto-Italic" family="Roboto" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -245,19 +262,19 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cantidad:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sC0-Xf-zY4">
-                                        <rect key="frame" x="115" y="347" width="85" height="24"/>
+                                        <rect key="frame" x="114" y="347" width="87.5" height="24"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0p-1n-elr">
-                                        <rect key="frame" x="145.5" y="418" width="24" height="36"/>
+                                        <rect key="frame" x="145" y="418" width="25.5" height="35"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPO-5N-Jm1">
-                                        <rect key="frame" x="30" y="462" width="255" height="1"/>
+                                        <rect key="frame" x="30" y="461" width="255" height="1"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="8hW-n8-jp2"/>
@@ -317,10 +334,10 @@
             </objects>
             <point key="canvasLocation" x="3516" y="92"/>
         </scene>
-        <!--View Controller-->
+        <!--Balance View Controller-->
         <scene sceneID="vX1-h6-EmQ">
             <objects>
-                <viewController id="xaE-fI-Zmh" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BalanceViewController" id="xaE-fI-Zmh" customClass="BalanceViewController" customModule="Flujo_de_caja" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dL8-6U-UGT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -329,7 +346,7 @@
                                 <rect key="frame" x="30" y="50" width="315" height="617"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SALDO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfI-kP-HR2">
-                                        <rect key="frame" x="94.5" y="69" width="126" height="47"/>
+                                        <rect key="frame" x="91" y="69" width="133" height="47"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="40"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -385,6 +402,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ttu-Sq-LDZ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ojf-Jt-qyK"/>
                     </connections>
@@ -396,10 +416,10 @@
     </scenes>
     <resources>
         <namedColor name="Color">
-            <color red="0.43137254901960786" green="0.35686274509803922" blue="0.086274509803921567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.4309999942779541" green="0.35699999332427979" blue="0.086000002920627594" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="background">
-            <color red="0.12941176470588234" green="0.14901960784313725" blue="0.42745098039215684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.1289999932050705" green="0.14900000393390656" blue="0.42699998617172241" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

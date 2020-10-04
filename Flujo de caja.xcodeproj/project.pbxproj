@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB0AC686252A3B320017CE57 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0AC684252A3B320017CE57 /* TransactionCell.swift */; };
+		AB0AC687252A3B320017CE57 /* TransactionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB0AC685252A3B320017CE57 /* TransactionCell.xib */; };
 		AB1A6F1925290D7E003163A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1A6F1825290D7E003163A6 /* AppDelegate.swift */; };
 		AB1A6F1B25290D7E003163A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1A6F1A25290D7E003163A6 /* SceneDelegate.swift */; };
 		AB1A6F1D25290D7E003163A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1A6F1C25290D7E003163A6 /* ViewController.swift */; };
@@ -16,6 +18,11 @@
 		AB1A6F3025290D84003163A6 /* Flujo_de_cajaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1A6F2F25290D84003163A6 /* Flujo_de_cajaTests.swift */; };
 		AB1A6F3B25290D84003163A6 /* Flujo_de_cajaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1A6F3A25290D84003163A6 /* Flujo_de_cajaUITests.swift */; };
 		AB1A6F4C25290F09003163A6 /* colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB1A6F4B25290F09003163A6 /* colors.xcassets */; };
+		AB1A6F67252933FA003163A6 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1A6F66252933FA003163A6 /* MenuViewController.swift */; };
+		AB1A6F6F25293434003163A6 /* TransactionsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1A6F6E25293434003163A6 /* TransactionsListViewController.swift */; };
+		AB1A6F7425293459003163A6 /* TransactionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1A6F7325293459003163A6 /* TransactionDetailViewController.swift */; };
+		AB1A6F7925293467003163A6 /* BalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1A6F7825293467003163A6 /* BalanceViewController.swift */; };
+		AB1A6F7F252934CD003163A6 /* ViewControllerStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1A6F7E252934CD003163A6 /* ViewControllerStyles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB0AC684252A3B320017CE57 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
+		AB0AC685252A3B320017CE57 /* TransactionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionCell.xib; sourceTree = "<group>"; };
 		AB1A6F1525290D7E003163A6 /* Flujo de caja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flujo de caja.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB1A6F1825290D7E003163A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB1A6F1A25290D7E003163A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +65,11 @@
 		AB1A6F5A252910ED003163A6 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		AB1A6F5B252910F3003163A6 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		AB1A6F5C252910F9003163A6 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		AB1A6F66252933FA003163A6 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		AB1A6F6E25293434003163A6 /* TransactionsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListViewController.swift; sourceTree = "<group>"; };
+		AB1A6F7325293459003163A6 /* TransactionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailViewController.swift; sourceTree = "<group>"; };
+		AB1A6F7825293467003163A6 /* BalanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceViewController.swift; sourceTree = "<group>"; };
+		AB1A6F7E252934CD003163A6 /* ViewControllerStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerStyles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +97,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB0AC683252A3A480017CE57 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AB0AC684252A3B320017CE57 /* TransactionCell.swift */,
+				AB0AC685252A3B320017CE57 /* TransactionCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		AB1A6F0C25290D7D003163A6 = {
 			isa = PBXGroup;
 			children = (
@@ -106,10 +129,12 @@
 		AB1A6F1725290D7E003163A6 /* Flujo de caja */ = {
 			isa = PBXGroup;
 			children = (
+				AB0AC683252A3A480017CE57 /* Cells */,
+				AB1A6F7D252934AF003163A6 /* Helpers */,
+				AB1A6F63252933B9003163A6 /* Modules */,
 				AB1A6F5325290FB4003163A6 /* Resources */,
 				AB1A6F1825290D7E003163A6 /* AppDelegate.swift */,
 				AB1A6F1A25290D7E003163A6 /* SceneDelegate.swift */,
-				AB1A6F1C25290D7E003163A6 /* ViewController.swift */,
 				AB1A6F1E25290D7E003163A6 /* Main.storyboard */,
 				AB1A6F2325290D84003163A6 /* LaunchScreen.storyboard */,
 				AB1A6F2625290D84003163A6 /* Info.plist */,
@@ -155,6 +180,42 @@
 				AB1A6F5C252910F9003163A6 /* Roboto-Light.ttf */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		AB1A6F63252933B9003163A6 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				AB1A6F65252933D4003163A6 /* Transactions */,
+				AB1A6F64252933C2003163A6 /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		AB1A6F64252933C2003163A6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AB1A6F1C25290D7E003163A6 /* ViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		AB1A6F65252933D4003163A6 /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				AB1A6F66252933FA003163A6 /* MenuViewController.swift */,
+				AB1A6F6E25293434003163A6 /* TransactionsListViewController.swift */,
+				AB1A6F7325293459003163A6 /* TransactionDetailViewController.swift */,
+				AB1A6F7825293467003163A6 /* BalanceViewController.swift */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		AB1A6F7D252934AF003163A6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AB1A6F7E252934CD003163A6 /* ViewControllerStyles.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +325,7 @@
 				AB1A6F4C25290F09003163A6 /* colors.xcassets in Resources */,
 				AB1A6F2225290D84003163A6 /* Assets.xcassets in Resources */,
 				AB1A6F2025290D7E003163A6 /* Main.storyboard in Resources */,
+				AB0AC687252A3B320017CE57 /* TransactionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,9 +350,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB1A6F7F252934CD003163A6 /* ViewControllerStyles.swift in Sources */,
 				AB1A6F1D25290D7E003163A6 /* ViewController.swift in Sources */,
 				AB1A6F1925290D7E003163A6 /* AppDelegate.swift in Sources */,
 				AB1A6F1B25290D7E003163A6 /* SceneDelegate.swift in Sources */,
+				AB1A6F6F25293434003163A6 /* TransactionsListViewController.swift in Sources */,
+				AB0AC686252A3B320017CE57 /* TransactionCell.swift in Sources */,
+				AB1A6F7425293459003163A6 /* TransactionDetailViewController.swift in Sources */,
+				AB1A6F7925293467003163A6 /* BalanceViewController.swift in Sources */,
+				AB1A6F67252933FA003163A6 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
