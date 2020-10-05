@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var userTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     var presenter: LoginPresenter?
     
@@ -39,6 +40,7 @@ class ViewController: UIViewController {
                 "email": user,
                 "password": password
             ]
+            self.activityIndicator.startAnimating()
             presenter?.loginUser(dict: dict)
         }
     }
@@ -50,11 +52,13 @@ extension ViewController: LoginView {
     
     func loginUserSucceded(user: User) {
         print("user: \(user)")
+        self.activityIndicator.stopAnimating()
         UserDefaults.standard.set(true, forKey: Constants.UserDefaults.loging)
         self.goToViewcontroller(name: "MenuViewController", title: "")
     }
     
     func loginUserFailed(error: String) {
+        self.activityIndicator.stopAnimating()
         self.showAlert(title: "Error", message: error)
     }
     
