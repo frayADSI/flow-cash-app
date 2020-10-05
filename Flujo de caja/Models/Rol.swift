@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+class Rol: Codable {
+    var id: Int?
+    var name: String?
+}

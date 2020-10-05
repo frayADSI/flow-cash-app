@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+struct API {
+    
+    static var ip = "192.168.1.105:8000"
+    static var baseUrl = "http://" + ip
+    struct Login {
+        static var loginUser = baseUrl + "/api/v1/login"
+    }
+}

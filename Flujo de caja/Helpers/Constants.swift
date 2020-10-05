@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct Constants {
+    struct UserDefaults {
+        static var loging = "Login.userLogged"
+    }
+}

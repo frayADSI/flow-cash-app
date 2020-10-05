@@ -15,10 +15,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     
+    var presenter: LoginPresenter?
+    
     //MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupViewController()
+        self.presenter = LoginPresenter(view: self)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -31,9 +34,31 @@ class ViewController: UIViewController {
     }
     
     @objc func loginTapped() {
-        self.goToViewcontroller(name: "MenuViewController", title: "")
+        if let user = self.userTextField.text, let password = self.passwordTextField.text {
+            let dict = [
+                "email": user,
+                "password": password
+            ]
+            presenter?.loginUser(dict: dict)
+        }
     }
 
 
 }
+
+extension ViewController: LoginView {
+    
+    func loginUserSucceded(user: User) {
+        print("user: \(user)")
+        UserDefaults.standard.set(true, forKey: Constants.UserDefaults.loging)
+        self.goToViewcontroller(name: "MenuViewController", title: "")
+    }
+    
+    func loginUserFailed(error: String) {
+        self.showAlert(title: "Error", message: error)
+    }
+    
+    
+}
+
 
