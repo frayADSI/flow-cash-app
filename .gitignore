@@ -7,7 +7,7 @@
 \pard\pardeftab720\partightenfactor0
 
 \f0\fs24 \cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 # Created by https://www.toptal.com/developers/gitignore/api/swift,cocoapods,xcode\
+# Created by https://www.toptal.com/developers/gitignore/api/swift,cocoapods,xcode\
 # Edit at https://www.toptal.com/developers/gitignore?templates=swift,cocoapods,xcode\
 \
 ### CocoaPods ###\
@@ -29,8 +29,11 @@ xcuserdata/\
 ## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)\
 *.xcscmblueprint\
 *.xccheckout\
-\
-## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+\cf2 Podfile.lock\
+/Pods\
+\pard\pardeftab720\partightenfactor0
+\cf2 ## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)\
 build/\
 DerivedData/\
 *.moved-aside\
@@ -106,8 +109,8 @@ iOSInjectionProject/\
 # Xcode\
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore\
 \
-\
-\
+/Pods\
+/Podfile.lock\
 \
 ## Gcc Patch\
 /*.gcno\

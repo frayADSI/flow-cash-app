@@ -56,6 +56,13 @@ extension UIViewController {
         self.goBack()
     }
     
+    func showAlert(title: String, message: String) {
+        let alertOption = UIAlertAction(title: "OK", style: .default)
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(alertOption)
+        self.present(alert, animated: true, completion: nil)
+    }
+    
 }
 
 extension UITableView {
