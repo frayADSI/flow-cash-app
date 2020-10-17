@@ -11,7 +11,6 @@
 		839DBD37E3FBAD9EC4FE8CD7 /* Pods_Flujo_de_caja.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 478EA19639F82E5857CF0FD3 /* Pods_Flujo_de_caja.framework */; };
 		9ECB5994408323164F1F5972 /* Pods_Flujo_de_cajaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4200AA37CFB409E6717B42 /* Pods_Flujo_de_cajaTests.framework */; };
 		AB0AC686252A3B320017CE57 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0AC684252A3B320017CE57 /* TransactionCell.swift */; };
-		AB0AC687252A3B320017CE57 /* TransactionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB0AC685252A3B320017CE57 /* TransactionCell.xib */; };
 		AB0AC692252A57650017CE57 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0AC691252A57650017CE57 /* User.swift */; };
 		AB0AC697252A577E0017CE57 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0AC696252A577E0017CE57 /* Transaction.swift */; };
 		AB0AC69E252A57CD0017CE57 /* LoginServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0AC69D252A57CD0017CE57 /* LoginServices.swift */; };
@@ -19,6 +18,9 @@
 		AB0AC6B4252A5AB80017CE57 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0AC6B3252A5AB80017CE57 /* API.swift */; };
 		AB0AC6C0252A8CEE0017CE57 /* Rol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0AC6BF252A8CEE0017CE57 /* Rol.swift */; };
 		AB0AC6C5252A8FBF0017CE57 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0AC6C4252A8FBF0017CE57 /* Constants.swift */; };
+		AB16644F253B434C00711D90 /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB16644E253B434C00711D90 /* MenuPresenter.swift */; };
+		AB16645D253B442200711D90 /* MenuServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB16645C253B442200711D90 /* MenuServices.swift */; };
+		AB16646C253B577100711D90 /* TransactionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB16646A253B577100711D90 /* TransactionCell.xib */; };
 		AB1A6F1925290D7E003163A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1A6F1825290D7E003163A6 /* AppDelegate.swift */; };
 		AB1A6F1B25290D7E003163A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1A6F1A25290D7E003163A6 /* SceneDelegate.swift */; };
 		AB1A6F1D25290D7E003163A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1A6F1C25290D7E003163A6 /* ViewController.swift */; };
@@ -63,7 +65,6 @@
 		657B8F56A6030AE221FEAE28 /* Pods-Flujo de caja-Flujo de cajaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flujo de caja-Flujo de cajaUITests.release.xcconfig"; path = "Target Support Files/Pods-Flujo de caja-Flujo de cajaUITests/Pods-Flujo de caja-Flujo de cajaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		76FBB8B5A2A1E2D22653FBCA /* Pods-Flujo de caja-Flujo de cajaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flujo de caja-Flujo de cajaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Flujo de caja-Flujo de cajaUITests/Pods-Flujo de caja-Flujo de cajaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AB0AC684252A3B320017CE57 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
-		AB0AC685252A3B320017CE57 /* TransactionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionCell.xib; sourceTree = "<group>"; };
 		AB0AC691252A57650017CE57 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AB0AC696252A577E0017CE57 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		AB0AC69D252A57CD0017CE57 /* LoginServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServices.swift; sourceTree = "<group>"; };
@@ -71,6 +72,9 @@
 		AB0AC6B3252A5AB80017CE57 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		AB0AC6BF252A8CEE0017CE57 /* Rol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rol.swift; sourceTree = "<group>"; };
 		AB0AC6C4252A8FBF0017CE57 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AB16644E253B434C00711D90 /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
+		AB16645C253B442200711D90 /* MenuServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuServices.swift; sourceTree = "<group>"; };
+		AB16646A253B577100711D90 /* TransactionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionCell.xib; sourceTree = "<group>"; };
 		AB1A6F1525290D7E003163A6 /* Flujo de caja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flujo de caja.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB1A6F1825290D7E003163A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB1A6F1A25290D7E003163A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,8 +143,8 @@
 		AB0AC683252A3A480017CE57 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				AB16646A253B577100711D90 /* TransactionCell.xib */,
 				AB0AC684252A3B320017CE57 /* TransactionCell.swift */,
-				AB0AC685252A3B320017CE57 /* TransactionCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -167,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				AB0AC69D252A57CD0017CE57 /* LoginServices.swift */,
+				AB16645C253B442200711D90 /* MenuServices.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -175,6 +180,41 @@
 			isa = PBXGroup;
 			children = (
 				AB1A6F1C25290D7E003163A6 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB166453253B435500711D90 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AB16644E253B434C00711D90 /* MenuPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AB166454253B436200711D90 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				AB16645B253B437900711D90 /* View */,
+				AB166453253B435500711D90 /* Presenter */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		AB16645B253B437900711D90 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB1A6F66252933FA003163A6 /* MenuViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB166464253B4BC200711D90 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB1A6F6E25293434003163A6 /* TransactionsListViewController.swift */,
+				AB1A6F7325293459003163A6 /* TransactionDetailViewController.swift */,
+				AB1A6F7825293467003163A6 /* BalanceViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -262,6 +302,7 @@
 		AB1A6F63252933B9003163A6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				AB166454253B436200711D90 /* Menu */,
 				AB1A6F65252933D4003163A6 /* Transactions */,
 				AB1A6F64252933C2003163A6 /* Login */,
 			);
@@ -280,10 +321,7 @@
 		AB1A6F65252933D4003163A6 /* Transactions */ = {
 			isa = PBXGroup;
 			children = (
-				AB1A6F66252933FA003163A6 /* MenuViewController.swift */,
-				AB1A6F6E25293434003163A6 /* TransactionsListViewController.swift */,
-				AB1A6F7325293459003163A6 /* TransactionDetailViewController.swift */,
-				AB1A6F7825293467003163A6 /* BalanceViewController.swift */,
+				AB166464253B4BC200711D90 /* View */,
 			);
 			path = Transactions;
 			sourceTree = "<group>";
@@ -421,9 +459,9 @@
 			files = (
 				AB1A6F2525290D84003163A6 /* LaunchScreen.storyboard in Resources */,
 				AB1A6F4C25290F09003163A6 /* colors.xcassets in Resources */,
+				AB16646C253B577100711D90 /* TransactionCell.xib in Resources */,
 				AB1A6F2225290D84003163A6 /* Assets.xcassets in Resources */,
 				AB1A6F2025290D7E003163A6 /* Main.storyboard in Resources */,
-				AB0AC687252A3B320017CE57 /* TransactionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,6 +589,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB16645D253B442200711D90 /* MenuServices.swift in Sources */,
 				AB0AC697252A577E0017CE57 /* Transaction.swift in Sources */,
 				AB1A6F7F252934CD003163A6 /* ViewControllerStyles.swift in Sources */,
 				AB1A6F1D25290D7E003163A6 /* ViewController.swift in Sources */,
@@ -559,6 +598,7 @@
 				AB1A6F6F25293434003163A6 /* TransactionsListViewController.swift in Sources */,
 				AB0AC6B4252A5AB80017CE57 /* API.swift in Sources */,
 				AB0AC6C5252A8FBF0017CE57 /* Constants.swift in Sources */,
+				AB16644F253B434C00711D90 /* MenuPresenter.swift in Sources */,
 				AB0AC686252A3B320017CE57 /* TransactionCell.swift in Sources */,
 				AB1A6F7425293459003163A6 /* TransactionDetailViewController.swift in Sources */,
 				AB0AC6A3252A58820017CE57 /* LoginPresenter.swift in Sources */,
